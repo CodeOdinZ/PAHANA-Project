@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@500&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    /*outline: 3px solid blue;*/
+    position:relative;
+    height:100vh;
+    padding:0px;
+    background-color: grey;
+    
+}
+
+header{
+    position:absolute;
+    z-index:2;
+}
+
+.bg-image{
+    
+    background-image: url("../IMG/alfons-morales-YLSwjSy7stw-unsplash.jpg");
+    background-color: rgb(116, 116, 128);
+    height:100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*outline:2px solid red;*/
+    z-index:0;
+    filter: blur(4px);
+    margin:-11px;
+
+
+}
+
+.bg-image2{
+    background-image: url("../IMG/susan-q-yin-2JIvboGLeho-unsplash.jpg");
+    z-index:0;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:180vh;
+    margin-top:-5px;
+    /*margin:7px;*/
+    width:1939px;
+    margin-left:-11px;
+
+}
+
+.bg-image3{
+    background-image: url("../IMG/paul-volkmer-qVotvbsuM_c-unsplash.jpg");
+    z-index:1;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:180vh;
+    margin-top:-1526px;
+    /*margin:7px;*/
+    width:1939px;
+    margin-left:-11px;
+    opacity:0.6;
+
+}
+
+.navtabs ul{
+    display:flex;
+    /*outline:2px solid red;*/
+    list-style-type:none;
+    gap:3.7vh;
+    height:6vh;
+    align-items:center;
+    margin-top:3vh;
+    
+    
+    
+
+}
+
+
+.hobut{
+    color:rgb(255, 145, 0);
+    text-decoration:none;
+    font-size:2.7vh;
+    font-family: 'Rum Raisin', sans-serif;
+    cursor: pointer;
+    
+}
+
+
+
+.navtabs li a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    font-size:2.7vh;
+    font-family: 'Rum Raisin', sans-serif;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    
+}
+
+
+
+.join{
+    margin-left: 136vh;
+    /*margin-right: 34px;*/
+    outline: 0.5vh solid black;
+    padding: 0.6vh 0.6vh;
+    height: 4.5vh;
+    width: 10vh;
+    text-align: center;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+
+}
+
+
+.navtabs li a:hover{
+    color: rgb(255, 145, 0);
+    cursor: pointer;
+    
+}
+
+.join:hover{
+    height:4.7vh;
+    width:10.5vh;
+    
+}
+
+@keyframes bookhol{
+    from{left:55vh}
+    to{left:110vh}
+}
+
+.book{
+    height: 1597px;
+    width: 1050px;
+    z-index: 1;
+    position: absolute;
+    top: -311px;
+    left: 55vh;
+    animation-name:bookhol;
+    animation-delay: 2500ms;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+
+
+}
+
+@keyframes pahanahol{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.pahana{
+    /*outline: 2px solid brown;*/
+    opacity: 0;
+    height: 361px;
+    width: 1055px;
+    z-index: 2;
+    position: absolute;
+    top: 258px;
+    left: 51px;
+    color: white;
+    font-weight: 550;
+    font-size: 110px;
+    padding-left: 71px;
+    font-family: 'Rubik Mono One', sans-serif;
+    animation-name:pahanahol;
+    animation-delay: 3500ms;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+.papercut{
+    height: 343px;
+    width: 1054px;
+    margin-top: -1814px;
+    margin-left: -85px;
+    position: absolute;
+    z-index: 3;
+    /*outline: 3px solid black;*/
+    transform: rotate(1deg);
+    
+    
+    
+}
+
+.papercut2{
+    height: 355px;
+    width: 1110px;
+    margin-top: -1815px;
+    margin-left: 875px;
+    position: absolute;
+    z-index: 3;
+    /*outline: 3px solid black;*/
+    transform: rotate(1deg);
+    transform: rotateY(180deg);
+
+
+
+
+}
+
+.bookjawaya{
+    /*outline:3px solid red;*/
+    margin-top: -1366px;
+    margin-left:3px;
+    width: 223vh;
+    height: 620px;
+    z-index: 4;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap:65px;
+
+}
+
+.book01{
+    height: 709px;
+    width: 1005px;
+    margin-right: -81px;
+    /*outline: 3px solid black;*/
+    z-index: 4;
+    
+
+
+}
+
+.jawayainfo{
+    /*outline:3px solid orange;*/
+    margin-left: 92px;
+    height: 243px;
+    width: 712px;
+    text-align: left;
+    color:white;
+    font-size:23px;
+    z-index:4;
+    font-family: 'Noto Sans Sinhala', sans-serif;
+    
+}
+
+
+
+
+.bookhudakala{
+    /*outline:3px solid rgb(255, 230, 0);*/
+    margin-top: 71px;
+    margin-left:3px;
+    width: 223vh;
+    height: 620px;
+    z-index: 4;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    gap:65px;
+
+}
+
+.book02{
+    height: 709px;
+    width: 1005px;
+    margin-right: 0px;
+    /*outline: 3px solid black;*/
+    z-index: 4;
+    
+
+
+}
+
+.hudainfo{
+    /*outline:3px solid orange;*/
+    margin-left: 92px;
+    height: 243px;
+    width: 712px;
+    text-align: left;
+    color:white;
+    font-size:23px;
+    z-index:4;
+    font-family: 'Noto Sans Sinhala', sans-serif;
+    
+}
