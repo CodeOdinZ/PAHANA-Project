@@ -54,24 +54,25 @@ header{
 
 .bg-image3{
     background-image: url("../IMG/paul-volkmer-qVotvbsuM_c-unsplash.jpg");
-    z-index:1;
-    background-size:cover;
+    z-index: 1;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height:180vh;
-    margin-top:-1526px;
-    /*margin:7px;*/
-    width:1939px;
-    margin-left:-11px;
-    opacity:0.6;
-
+    height: 180vh;
+    margin-top: -179vh;
+    /* margin: 7px; */
+    width: 204vh;
+    margin-left: -0.8vh;
+    opacity: 0.6;
 }
+
+
 
 .navtabs ul{
     display:flex;
     /*outline:2px solid red;*/
     list-style-type:none;
-    gap:3.7vh;
+    gap:3vh;
     height:6vh;
     align-items:center;
     margin-top:3vh;
@@ -79,6 +80,11 @@ header{
     
     
 
+}
+
+.navtabs ul li{
+    width:max-content;
+    justify-content:flex-start;
 }
 
 
@@ -101,17 +107,18 @@ header{
     transition-timing-function: ease-in-out;
     transition-duration: 250ms;
     
+    
+    
 }
 
 
 
 .join{
-    margin-left: 136vh;
-    /*margin-right: 34px;*/
+    
+    margin-left: 118vh;
     outline: 0.5vh solid black;
-    padding: 0.6vh 0.6vh;
+    padding: 0.6vh 1.7vh 0.6vh 1.7vh;
     height: 4.5vh;
-    width: 10vh;
     text-align: center;
     transition-timing-function: ease-in-out;
     transition-duration: 250ms;
@@ -126,14 +133,16 @@ header{
 }
 
 .join:hover{
-    height:4.7vh;
-    width:10.5vh;
+    padding-top:0.6vh;
+    padding-bottom: 0.6vh;
+    padding-left: 1.9vh;
+    padding-right: 1.9vh;
     
 }
 
 @keyframes bookhol{
-    from{left:55vh}
-    to{left:110vh}
+    from{left:45vh}
+    to{left:90vh}
 }
 
 .book{
@@ -142,7 +151,7 @@ header{
     z-index: 1;
     position: absolute;
     top: -36.6vh;
-    left: 55vh;
+    left: 45vh;
     animation-name:bookhol;
     animation-delay: 2500ms;
     animation-duration: 2000ms;
@@ -162,19 +171,19 @@ header{
 .pahana{
     /*outline: 2px solid brown;*/
     opacity: 0;
-    height: 361px;
-    width: 1055px;
+    height: 45vh;
+    width: 125vh;
     z-index: 2;
     position: absolute;
-    top: 258px;
-    left: 51px;
+    top: 30vh;
+    left: 3vh;
     color: white;
     font-weight: 550;
-    font-size: 110px;
-    padding-left: 71px;
+    font-size: 7rem;
+    padding-left: 5vh;
     font-family: 'Rubik Mono One', sans-serif;
-    animation-name:pahanahol;
-    animation-delay: 3500ms;
+    animation-name: pahanahol;
+    animation-delay: 3200ms;
     animation-duration: 2000ms;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -183,10 +192,11 @@ header{
 
 
 .papercut{
-    height: 343px;
-    width: 1054px;
-    margin-top: -1814px;
-    margin-left: -85px;
+    position: absolute;
+    height: 36.2vh;
+    width: 115vh;
+    top: 71vh;
+    left: -6.4vh;
     position: absolute;
     z-index: 3;
     /*outline: 3px solid black;*/
@@ -197,10 +207,10 @@ header{
 }
 
 .papercut2{
-    height: 355px;
-    width: 1110px;
-    margin-top: -1815px;
-    margin-left: 875px;
+    height: 36.2vh;
+    width: 125vh;
+    top: 72vh;
+    left: 90vh;
     position: absolute;
     z-index: 3;
     /*outline: 3px solid black;*/
@@ -214,38 +224,38 @@ header{
 
 .bookjawaya{
     /*outline:3px solid red;*/
-    margin-top: -1366px;
-    margin-left:3px;
+    margin-top: -160vh;
+    margin-left: 0.4vh;
     width: 223vh;
-    height: 620px;
+    height: 70vh;
     z-index: 4;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    gap:65px;
 
 }
 
 .book01{
-    height: 709px;
-    width: 1005px;
-    margin-right: -81px;
-    /*outline: 3px solid black;*/
+    height: 75vh;
+    width: 120vh;
+    margin-right: 3vh;
+    /* outline: 3px solid black; */
     z-index: 4;
+}
     
 
 
-}
+
 
 .jawayainfo{
     /*outline:3px solid orange;*/
-    margin-left: 92px;
-    height: 243px;
-    width: 712px;
+    margin-left: 10vh;
+    height: 25vh;
+    width: 82vh;
     text-align: left;
-    color:white;
-    font-size:23px;
-    z-index:4;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 4;
     font-family: 'Noto Sans Sinhala', sans-serif;
     
 }
@@ -256,21 +266,21 @@ header{
 .bookhudakala{
     /*outline:3px solid rgb(255, 230, 0);*/
     margin-top: 71px;
-    margin-left:3px;
+    margin-left: 0.4vh;
     width: 223vh;
-    height: 620px;
+    height: 70vh;
     z-index: 4;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    gap:65px;
+    /*gap:65px;*/
 
 }
 
 .book02{
-    height: 709px;
-    width: 1005px;
-    margin-right: 0px;
+    height: 75vh;
+    width: 120vh;
+    margin-right: 12vh;
     /*outline: 3px solid black;*/
     z-index: 4;
     
@@ -280,13 +290,13 @@ header{
 
 .hudainfo{
     /*outline:3px solid orange;*/
-    margin-left: 92px;
-    height: 243px;
-    width: 712px;
+    margin-left: 10vh;
+    height: 25vh;
+    width: 82vh;
     text-align: left;
-    color:white;
-    font-size:23px;
-    z-index:4;
+    color: white;
+    font-size: 1.5rem;
+    z-index: 4;
     font-family: 'Noto Sans Sinhala', sans-serif;
     
 }
