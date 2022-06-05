@@ -137,11 +137,11 @@ header{
 }
 
 .book{
-    height: 1597px;
-    width: 1050px;
+    height: 187vh;
+    width:120vh;
     z-index: 1;
     position: absolute;
-    top: -311px;
+    top: -36.6vh;
     left: 55vh;
     animation-name:bookhol;
     animation-delay: 2500ms;
