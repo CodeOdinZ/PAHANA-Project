@@ -14,6 +14,8 @@ body{
     height:100vh;
     padding:0px;
     background-color: grey;
+    min-width: 648px;
+
     
 }
 
@@ -26,56 +28,34 @@ header{
     
     background-image: url("../IMG/alfons-morales-YLSwjSy7stw-unsplash.jpg");
     background-color: rgb(116, 116, 128);
-    height:100vh;
+    width:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /*outline:2px solid red;*/
     z-index:0;
     filter: blur(4px);
-    margin:-11px;
-
-
 }
 
-.bg-image2{
-    background-image: url("../IMG/susan-q-yin-2JIvboGLeho-unsplash.jpg");
-    z-index:0;
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height:180vh;
-    margin-top:-5px;
-    /*margin:7px;*/
-    width:1939px;
-    margin-left:-11px;
 
-}
 
-.bg-image3{
-    background-image: url("../IMG/paul-volkmer-qVotvbsuM_c-unsplash.jpg");
-    z-index: 1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 180vh;
-    margin-top: -179vh;
-    /* margin: 7px; */
-    width: 204vh;
-    margin-left: -0.8vh;
-    opacity: 0.6;
+.nav{
+    width:100%;
+    padding-left:8%;
+    padding-right:8%;
+    overflow:hidden;
+    min-height:100vh;
 }
 
 
 
 .navtabs ul{
     display:flex;
-    /*outline:2px solid red;*/
     list-style-type:none;
-    gap:3vh;
-    height:6vh;
+    gap:35px;
     align-items:center;
-    margin-top:3vh;
+    margin-top:25px;
+    overflow:hidden;
     
     
     
@@ -102,7 +82,7 @@ header{
 .navtabs li a{
     text-decoration:none;
     color:rgb(255, 255, 255);
-    font-size:2.7vh;
+    font-size:155%;
     font-family: 'Rum Raisin', sans-serif;
     transition-timing-function: ease-in-out;
     transition-duration: 250ms;
@@ -111,11 +91,19 @@ header{
     
 }
 
+.initinfo{
+    width:100%;
+    padding-left:7%;
+    padding-rigth:7%;
+    min-height:110vh;
+    
+}
+
 
 
 .join{
     
-    margin-left: 118vh;
+    margin-left: 56vw; /*56vw*/
     outline: 0.5vh solid black;
     padding: 0.6vh 1.7vh 0.6vh 1.7vh;
     height: 4.5vh;
@@ -146,12 +134,12 @@ header{
 }
 
 .book{
-    height: 187vh;
-    width:120vh;
+    height: 186%;
+    width:60%;
     z-index: 1;
     position: absolute;
-    top: -36.6vh;
-    left: 45vh;
+    top: -337px;
+    left: 19vw;
     animation-name:bookhol;
     animation-delay: 2500ms;
     animation-duration: 2000ms;
@@ -179,7 +167,7 @@ header{
     left: 3vh;
     color: white;
     font-weight: 550;
-    font-size: 7rem;
+    font-size: 5.5vw;
     padding-left: 5vh;
     font-family: 'Rubik Mono One', sans-serif;
     animation-name: pahanahol;
@@ -193,10 +181,10 @@ header{
 
 .papercut{
     position: absolute;
-    height: 36.2vh;
-    width: 115vh;
-    top: 71vh;
-    left: -6.4vh;
+    height: 342px;
+    width: 57%;
+    top: 671px;
+    left: -3vw;
     position: absolute;
     z-index: 3;
     /*outline: 3px solid black;*/
@@ -207,10 +195,10 @@ header{
 }
 
 .papercut2{
-    height: 36.2vh;
-    width: 125vh;
-    top: 72vh;
-    left: 90vh;
+    height: 343px;
+    width: 63%;
+    top: 680px;
+    left: 44.5vw;
     position: absolute;
     z-index: 3;
     /*outline: 3px solid black;*/
@@ -222,16 +210,26 @@ header{
 
 }
 
+
+/*.jawacont{
+
+    margin-inline:auto;
+    width:min(90%, 70.5rem);
+    outline:1px solid black;
+}*/
+
 .bookjawaya{
     /*outline:3px solid red;*/
     margin-top: -160vh;
     margin-left: 0.4vh;
     width: 223vh;
     height: 70vh;
+    padding:3rem 0;
     z-index: 4;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position:sticky;
 
 }
 
@@ -254,7 +252,7 @@ header{
     width: 82vh;
     text-align: left;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2vw;
     z-index: 4;
     font-family: 'Noto Sans Sinhala', sans-serif;
     
@@ -295,7 +293,7 @@ header{
     width: 82vh;
     text-align: left;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2vw;
     z-index: 4;
     font-family: 'Noto Sans Sinhala', sans-serif;
     
