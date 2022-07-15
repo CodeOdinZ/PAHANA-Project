@@ -47,7 +47,7 @@ header{
 }
 .navi{
     display:flex;
-    border:1px solid red;
+    /*border:1px solid red;*/
     padding:5px 36px;
     justify-content: flex-start;
     overflow: hidden;
@@ -109,7 +109,7 @@ header{
 }
 
 .welinfo{
-    border:3px solid red;
+    /*border:3px solid red;*/
     position: relative;
     top:-106vh;
     display:flex;
@@ -137,7 +137,7 @@ header{
 }
 
 .pahana{
-    border:2px solid red;
+    /*border:2px solid red;*/
     opacity: 0;
     color: aliceblue;
     font-family: 'Acme', sans-serif;
@@ -154,7 +154,7 @@ header{
 
 
 .bookpic{
-    border:2px solid red;
+    /*border:2px solid red;*/
     width:auto;
     max-height:175vh;
     object-fit: contain;
@@ -195,7 +195,7 @@ header{
 
 /*jawaya book*/
 .jawayabk{
-    border:3px solid red;
+    /*border:3px solid red;*/
     max-height:745px;
     position:relative;
     top:-776px;
@@ -207,7 +207,7 @@ header{
 }
 
 .bjwinfo{
-    border:2px solid blue;
+    /*border:2px solid blue;*/
     transform: translateX(277px);
     font-family: 'Noto Sans Sinhala', sans-serif;
     font-size: 1.2rem;
@@ -216,7 +216,7 @@ header{
 }
 
 .bjwimg{
-    border:2px solid blue;
+    /*border:2px solid blue;*/
     width:auto;
     max-height:37em;
     transform: translateX(25px);
@@ -226,7 +226,7 @@ header{
 /*hudkala book*/
 
 .hubk{
-    border:3px solid red;
+    /*border:3px solid red;*/
     max-height:745px;
     position:relative;
     top:-643px;
@@ -238,7 +238,7 @@ header{
 }
 
 .huinfo{
-    border:2px solid blue;
+    /*border:2px solid blue;*/
     transform: translateX(277px);
     font-family: 'Noto Sans Sinhala', sans-serif;
     font-size: 1.2rem;
@@ -247,7 +247,7 @@ header{
 }
 
 .huimg{
-    border:2px solid blue;
+    /*border:2px solid blue;*/
     width:auto;
     max-height:37em;
     transform: translateX(-40px);
