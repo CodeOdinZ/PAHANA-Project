@@ -1,60 +1,149 @@
-*{
-    background-color: rgb(180, 180, 180);
-}
-
-
-.navtabs{
-    width:105%;
-    /*outline: 1px solid red;*/
-}
+@import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
 
 
 
-.navtabs ul{
+
+body{
+    margin:0;
     display:flex;
-    /*outline:2px solid red;*/
+    flex-direction: column;
+    padding:0;
+    gap:3px;
+    position:relative;
+}
+
+header{
+    border:2px solid red;
+    margin:0;
+}
+
+.navi{
+    display:flex;
+    /*border:1px solid red;*/
+    padding:5px 36px;
+    justify-content: flex-start;
+    overflow: hidden;
+    
+    
+    
+}
+
+.listsleft{
+    /*border:1px solid red;*/
     list-style-type:none;
-    gap:35px;
-    height:70px;
-    align-items:center;
-    margin-top:25px;
+    padding-left:4px;
+    overflow: hidden;
+    display:flex;
+    justify-content: flex-start;
+    gap:2em;
     
-    
-    
-
 }
 
-.navtabs ul li{
-    width:max-content;
-    justify-content:flex-start;
-}
-
-
-.puch{
-    color:rgb(255, 145, 0);
-    text-decoration:none;
-    font-size:2.7vh;
+.purch{
+    color:rgb(252, 151, 0);
+    font-size:1.6rem;
     font-family: 'Rum Raisin', sans-serif;
-    cursor: pointer;
-    
 }
 
-
-
-.navtabs li a{
-    text-decoration:none;
-    color:rgb(255, 255, 255);
-    font-size:155%;
+.listsleft li a{
+    color:rgb(0, 0, 0);
+    font-size:1.6rem;
     font-family: 'Rum Raisin', sans-serif;
+    white-space: nowrap;
+    overflow:hidden;
     transition-timing-function: ease-in-out;
     transition-duration: 250ms;
+    text-decoration: none;
+
+}
+
+.listsleft li a:hover{
+    color:rgb(252, 151, 0);
     
+}
+
+.shop{
+    border:2px solid red;
+    text-align: center;
+    color:black;
+    font-size:3.9rem;
+    font-family: 'Rum Raisin', sans-serif;
+    position: relative;
+    top:-5vh;
+}
+
+.tiles{
+    border:2px solid red;
+    height:50vh;
+    display:flex;
+    flex-direction:column;
+    padding:13px 350px;
+
+}
+
+/*first tile group*/
+
+.firsttiles{
+    border:2px solid blue;
+    height:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:4px;
+    gap:1.2em;
+}
+
+/*booktile styling*/
+
+.booktile{
+    border:2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    width: 20%;
+    border-radius: 25px;
+    box-shadow: 4px 4px 14px 0px black;
+    text-decoration: none;
     
     
 }
 
-.navtabs li a:hover{
-    color: rgb(255, 145, 0);
-    cursor: pointer;
+.btimg{
+    /*border:2px solid red;*/
+    max-width: 208px;
+    max-height: 220px;
+    position: relative;
+    padding:0;
+    margin:0;
     
+}
+
+.btinfo{
+    
+    position: relative;
+    top: -3.5vh;
+    font-size: 1.6rem;
+    font-weight: 550;
+    text-align: center;
+    color: black;
+}
+
+/*toytile styling*/
+
+.toytile{
+    border:2px solid green;
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width: 20%;
+    gap:5px;
+    text-decoration: none;
+}
+/*second tile group*/
+
+.sectiles{
+    border:2px solid blue;
+    height: 50%;
 }

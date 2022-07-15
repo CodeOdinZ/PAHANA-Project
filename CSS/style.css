@@ -1,300 +1,254 @@
 @import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@500&display=swap');
-
-
-
-* {
-    box-sizing: border-box;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@600&display=swap');
 
 body{
-    /*outline: 3px solid blue;*/
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    padding:0;
+    gap:3px;
     position:relative;
-    height:100vh;
-    padding:0px;
-    background-color: grey;
-    min-width: 648px;
+}
 
+
+.bgimg{
+    position: relative;
+    z-index:0;
+    width: 100%;
+    height:100vh;
+    background-image: url(../IMG/alfons-morales-YLSwjSy7stw-unsplash.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    top:-86px;
+    filter: blur(3px);
+    margin:0;
+    overflow: hidden;
     
+}
+
+
+.listsright,.listsleft, .navi .navlist{
+    display:flex;
+}
+
+a{
+    text-decoration: none;
 }
 
 header{
-    position:absolute;
+    position:relative;
     z-index:2;
 }
-
-.bg-image{
-    
-    background-image: url("../IMG/alfons-morales-YLSwjSy7stw-unsplash.jpg");
-    background-color: rgb(116, 116, 128);
-    width:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /*outline:2px solid red;*/
-    z-index:0;
-    filter: blur(4px);
-}
-
-
-
-.nav{
-    width:100%;
-    padding-left:8%;
-    padding-right:8%;
-    overflow:hidden;
-    min-height:100vh;
-}
-
-
-
-.navtabs ul{
+.navi{
     display:flex;
+    border:1px solid red;
+    padding:5px 36px;
+    justify-content: flex-start;
+    overflow: hidden;
+    
+    
+}
+
+.listsleft{
+    /*border:1px solid red;*/
     list-style-type:none;
-    gap:35px;
-    align-items:center;
-    margin-top:25px;
-    overflow:hidden;
+    gap:2em;
+    padding:3px;
+    overflow: hidden;
     
-    
-    
-
 }
 
-.navtabs ul li{
-    width:max-content;
-    justify-content:flex-start;
-}
 
+.listsright{
+    /*border:1px solid red;*/
+    gap:2em;
+    list-style-type: none;
+    padding:3px;
+    overflow: hidden;
+    margin-left:auto;
+    
+}
 
 .hobut{
-    color:rgb(255, 145, 0);
-    text-decoration:none;
-    font-size:2.7vh;
+    color:rgb(252, 151, 0);
+    font-size:1.6rem;
     font-family: 'Rum Raisin', sans-serif;
-    cursor: pointer;
-    
 }
 
 
-
-.navtabs li a{
-    text-decoration:none;
-    color:rgb(255, 255, 255);
-    font-size:155%;
+.listsleft li a,.listsright li a{
+    color:white;
+    font-size:1.6rem;
     font-family: 'Rum Raisin', sans-serif;
-    transition-timing-function: ease-in-out;
-    transition-duration: 250ms;
-    
-    
-    
-}
-
-.initinfo{
-    width:100%;
-    padding-left:7%;
-    padding-rigth:7%;
-    min-height:110vh;
-    
-}
-
-
-
-.join{
-    
-    margin-left: 56vw; /*56vw*/
-    outline: 0.5vh solid black;
-    padding: 0.6vh 1.7vh 0.6vh 1.7vh;
-    height: 4.5vh;
-    text-align: center;
+    white-space: nowrap;
+    overflow:hidden;
     transition-timing-function: ease-in-out;
     transition-duration: 250ms;
 
 }
 
-
-.navtabs li a:hover{
-    color: rgb(255, 145, 0);
-    cursor: pointer;
+.listsright li{
+    padding-left:15px;
+    padding-right:15px;
+    border:3px solid black;
+    border-radius: 20px;
+    
     
 }
 
-.join:hover{
-    padding-top:0.6vh;
-    padding-bottom: 0.6vh;
-    padding-left: 1.9vh;
-    padding-right: 1.9vh;
+
+.listsleft li a:hover,.listsright li a:hover{
+    color:rgb(252, 151, 0);
     
 }
 
-@keyframes bookhol{
-    from{left:45vh}
-    to{left:90vh}
-}
-
-.book{
-    height: 186%;
-    width:60%;
-    z-index: 1;
-    position: absolute;
-    top: -337px;
-    left: 19vw;
-    animation-name:bookhol;
-    animation-delay: 2500ms;
-    animation-duration: 2000ms;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
+.welinfo{
+    border:3px solid red;
+    position: relative;
+    top:-106vh;
+    display:flex;
+    width:auto;
+    max-height: 96vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     
-
-
+    
 }
 
-@keyframes pahanahol{
-    from{opacity: 0;}
-    to{opacity: 1;}
+.pahana a{
+    color:white;
+    padding:6px;
+    border:5px solid rgb(0, 0, 0);
+    font-size:1.5rem;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+}
+
+.pahana a:hover{
+    padding:8px;
+    
 }
 
 .pahana{
-    /*outline: 2px solid brown;*/
+    border:2px solid red;
     opacity: 0;
-    height: 45vh;
-    width: 125vh;
-    z-index: 2;
-    position: absolute;
-    top: 30vh;
-    left: 3vh;
-    color: white;
-    font-weight: 550;
-    font-size: 5.5vw;
-    padding-left: 5vh;
-    font-family: 'Rubik Mono One', sans-serif;
-    animation-name: pahanahol;
-    animation-delay: 3200ms;
-    animation-duration: 2000ms;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
+    color: aliceblue;
+    font-family: 'Acme', sans-serif;
+    font-size:7rem;
+    top:30px;
+    transform: translateX(444px);
+    animation-name: welinfo;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
+    animation-duration: 900ms;
+    animation-delay: 2.5s;
+    z-index:2;
 }
 
 
-.papercut{
-    position: absolute;
-    height: 342px;
-    width: 57%;
-    top: 671px;
-    left: -3vw;
-    position: absolute;
-    z-index: 3;
-    /*outline: 3px solid black;*/
-    transform: rotate(1deg);
-    
-    
+.bookpic{
+    border:2px solid red;
+    width:auto;
+    max-height:175vh;
+    object-fit: contain;
+    position:relative;
+    /*top:6vh;*/
+    transform: translateX(-226px);
+    filter: blur(0.3px);
+    animation-name: bookpi;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-duration: 900ms;
+    animation-delay: 2.5s;
+    z-index: 1;
     
 }
 
-.papercut2{
-    height: 343px;
-    width: 63%;
-    top: 680px;
-    left: 44.5vw;
-    position: absolute;
-    z-index: 3;
-    /*outline: 3px solid black;*/
-    transform: rotate(1deg);
-    transform: rotateY(180deg);
 
+@keyframes bookpi{
+    from{
+        transform: translateX(-226px);
+    }
+    to{
+        transform: translateX(10px);
+    }
+}
 
-
-
+@keyframes welinfo{
+    from{
+        transform: translateX(444px);
+        opacity:0;
+    }
+    to{
+        transform: translateX(218px);
+        opacity:1;
+    }
 }
 
 
-/*.jawacont{
-
-    margin-inline:auto;
-    width:min(90%, 70.5rem);
-    outline:1px solid black;
-}*/
-
-.bookjawaya{
-    /*outline:3px solid red;*/
-    margin-top: -160vh;
-    margin-left: 0.4vh;
-    width: 223vh;
-    height: 70vh;
-    padding:3rem 0;
-    z-index: 4;
+/*jawaya book*/
+.jawayabk{
+    border:3px solid red;
+    max-height:745px;
+    position:relative;
+    top:-776px;
+    z-index:3;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    position:sticky;
 
 }
 
-.book01{
-    height: 75vh;
-    width: 120vh;
-    margin-right: 3vh;
-    /* outline: 3px solid black; */
-    z-index: 4;
-}
-    
-
-
-
-
-.jawayainfo{
-    /*outline:3px solid orange;*/
-    margin-left: 10vh;
-    height: 25vh;
-    width: 82vh;
-    text-align: left;
-    color: white;
-    font-size: 1.2vw;
-    z-index: 4;
+.bjwinfo{
+    border:2px solid blue;
+    transform: translateX(277px);
     font-family: 'Noto Sans Sinhala', sans-serif;
+    font-size: 1.2rem;
+    width:auto;
+    max-height:10em;
+}
+
+.bjwimg{
+    border:2px solid blue;
+    width:auto;
+    max-height:37em;
+    transform: translateX(25px);
     
 }
 
+/*hudkala book*/
 
-
-
-.bookhudakala{
-    /*outline:3px solid rgb(255, 230, 0);*/
-    margin-top: 71px;
-    margin-left: 0.4vh;
-    width: 223vh;
-    height: 70vh;
-    z-index: 4;
+.hubk{
+    border:3px solid red;
+    max-height:745px;
+    position:relative;
+    top:-643px;
+    z-index:3;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    /*gap:65px;*/
 
 }
 
-.book02{
-    height: 75vh;
-    width: 120vh;
-    margin-right: 12vh;
-    /*outline: 3px solid black;*/
-    z-index: 4;
-    
-
-
-}
-
-.hudainfo{
-    /*outline:3px solid orange;*/
-    margin-left: 10vh;
-    height: 25vh;
-    width: 82vh;
-    text-align: left;
-    color: white;
-    font-size: 1.2vw;
-    z-index: 4;
+.huinfo{
+    border:2px solid blue;
+    transform: translateX(277px);
     font-family: 'Noto Sans Sinhala', sans-serif;
-    
+    font-size: 1.2rem;
+    width:auto;
+    max-height:10em;
+}
+
+.huimg{
+    border:2px solid blue;
+    width:auto;
+    max-height:37em;
+    transform: translateX(-40px);
 }
