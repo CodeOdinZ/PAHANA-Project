@@ -258,8 +258,16 @@ header{
     width: 100%;
     position: fixed;
     z-index:100;
-    background: #000 url(IMG/bookload2.gif);
-    background-repeat: no-repeat;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-repeat: no-repeat;
     background-position: center;
-    background-size: 30%;
+    background-size: 30%;*/
+}
+
+.gif{
+    width:auto;
+    max-height:350px;
 }
