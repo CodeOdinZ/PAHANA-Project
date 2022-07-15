@@ -258,7 +258,7 @@ header{
     width: 100%;
     position: fixed;
     z-index:100;
-    background: #000 url(/IMG/bookload2.gif);
+    background: #000 url(IMG/bookload2.gif);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 30%;

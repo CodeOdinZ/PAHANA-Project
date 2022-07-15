@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="CSS/purch.css">
 </head>
 <body>
+
+
+    <div class="preload"></div>
     <header>
 
         <nav class="navi">
@@ -75,7 +78,15 @@
 
 
 
+    <script>
 
+        let loader= document.querySelector(".preload");
+
+        window.addEventListener("load" , ()=>{
+
+            loader.style.display= "none";
+        })
+    </script>
 
 </body>
 </html>
