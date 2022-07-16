@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    padding:0;
+    gap:3px;
+    position:relative;
+    background-color: antiquewhite;
+}
+
+.navi{
+    display:flex;
+    /*border:1px solid red;*/
+    padding:5px 36px;
+    justify-content: flex-start;
+    overflow: hidden;
+    
+    
+    
+}
+
+.listsleft{
+    /*border:1px solid red;*/
+    list-style-type:none;
+    padding-left:4px;
+    overflow: hidden;
+    display:flex;
+    justify-content: flex-start;
+    gap:2em;
+    
+}
+.listsleft li a{
+    color:rgb(0, 0, 0);
+    font-size:1.6rem;
+    font-family: 'Rum Raisin', sans-serif;
+    white-space: nowrap;
+    overflow:hidden;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    
+
+}
+
+.listsleft li a:hover{
+    color:rgb(252, 151, 0);
+    
+}
+
+.topic{
+    /*border:2px solid red;*/
+    font-size: 3.2rem;
+    text-align: left;
+    padding-left:35px;
+    font-weight: 550;
+    position: relative;
+    top:20px;
+    color: #ff6b00;
+    font-family: 'Anton', sans-serif;
+}
+
+.bookset{
+    /*border:2px solid rgb(255, 123, 0);*/
+    width:100%;
+    height:100vh;
+    top:30px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:30px 12px;
+
+}
+
+.firstrow{
+    /*border:2px solid red;*/
+    height: auto;
+    max-width:98%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*book1 styling*/
+
+.bk1{
+    /*border:2px solid rgb(23, 0, 226);*/
+    display: flex;
+    flex-direction: column;
+
+    gap:2px;
+}
+.bk1img{
+    height:auto;
+    max-width:500px;
+    align-self: center;
+    transform: translateX(40px);
+}
+.bk1info p{color:red;}
+
+.bk1info{
+    
+    /*border:2px solid blue;*/
+    color:black;
+    font-size:1.3rem;
+    height:auto;
+    min-width:50px;
+    font-weight: 650;
+    line-height: 13px;
+    font-family: 'Noto Sans Sinhala', sans-serif;
+    text-align: center;
+    
+}
+
+.bk1butn{
+    display: flex;
+    gap:11px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*customizing 2 buttons*/
+
+.buybutn{
+    background-color: rgb(0 114 255);
+    color: azure;
+    height: 4vh;
+    min-width: 51px;
+    border-radius: 10px;
+    border:none;
+    font-size:1.1rem;
+
+}
+
+.countbutn{
+    background-color: rgb(255, 145, 0);
+    color: rgb(0, 0, 0);
+    height: 4vh;
+    min-width: 35px;
+    border-radius: 10px;
+    border:none;
+    font-size:1.1rem;
+}
+
+.bk2img{
+height:auto;
+    max-width:500px;
+    align-self: center;
+    transform: translateX(-3px);
+}
+
+
+.preload{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index:100;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;*/
+}
+
+.gif{
+    width:auto;
+    max-height:350px;
+}
+
+
