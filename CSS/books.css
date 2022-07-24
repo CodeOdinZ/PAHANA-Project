@@ -58,16 +58,50 @@ body{
     
 }
 
+.markbutn{
+    background-color: rgb(0, 119, 255);
+    color:white;
+    font-size:1.2rem;
+    margin-left:auto;
+    border:none;
+    border-radius:12px;
+    max-height:35px;
+    position:relative;
+    top:20px;
+    box-shadow:0px 5px 0px 0.2px #004dad,0px 5px 9px 1px rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+
 .topic{
     /*border:2px solid red;*/
     font-size: 3.2rem;
     text-align: left;
     padding-left:35px;
+    padding-right:35px;
     font-weight: 550;
     position: relative;
     top:20px;
     color: #ff6b00;
     font-family: 'Anton', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#proceed{
+    background-color: rgb(5, 202, 31);
+    color: rgb(0, 0, 0);
+    font-family: 'Anton', sans-serif;
+    border:none;
+    height: 4.5vh;
+    min-width: 77px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+
+#proceed:hover{
+    box-shadow: 0px 0px 10px 1px;
 }
 
 .bookset{
@@ -88,7 +122,8 @@ body{
     max-width:98%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    
 }
 
 /*book1 styling*/
@@ -102,7 +137,7 @@ body{
 }
 .bk1img{
     height:auto;
-    max-width:500px;
+    max-width:33vw; /*664px*/
     align-self: center;
     transform: translateX(40px);
 }
@@ -143,7 +178,7 @@ body{
 }
 
 .countbutn{
-    background-color: rgb(255, 145, 0);
+    background-color: rgb(255 168 53);
     color: rgb(0, 0, 0);
     height: 4vh;
     min-width: 35px;
@@ -154,7 +189,7 @@ body{
 
 .bk2img{
 height:auto;
-    max-width:500px;
+    max-width:33vw;
     align-self: center;
     transform: translateX(-3px);
 }

@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@500&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    /*outline: 3px solid blue;*/
+    position:relative;
+    margin:0;
+    padding:0;
+    background-color: grey;
+}
+
+header{
+   
+    z-index:2;
+}
+
+/*began to fix*/
+
+.navi{
+    display:flex;
+    justify-content:space-between;
+    padding:10px;
+    border:2px solid red;
+
+}
+
+.listsleft{
+    display: flex;
+    justify-content: flex-start;
+    gap:1.5em;
+    list-style-type: none;
+
+}
+
+.listsleft li a, .listsright li a{
+    text-decoration:none;
+    color:white;
+    font-family:'Rum Raisin', sans-serif;
+    font-size:1.41rem;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
+
+}
+
+.listsright{
+    display: flex;
+    justify-content: flex-end;
+    padding-right:2em;
+    gap:1.5em;
+    list-style-type: none;
+
+}
+
+
+.listsleft li a:hover{
+    color: rgb(255, 145, 0);
+    cursor: pointer;
+    
+}
+.listsright li a:hover{
+    color: rgb(255, 145, 0);
+    cursor: pointer;
+    
+}
+
+/*upto here all are redesigned correctly*/
+
+.bg-image{
+    
+    background-image: url("../IMG/alfons-morales-YLSwjSy7stw-unsplash.jpg");
+    background-color: rgb(116, 116, 128);
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*outline:2px solid red;*/
+    z-index:0;
+    filter: blur(4px);
+    
+}
+
+
+.initinfo{
+    width:100%;
+    padding-left:7%;
+    padding-rigth:7%;
+    min-height:110vh;
+    
+}
+
+
+
+/*following 2 to animate log in buttons*/
+.join{
+    
+    margin-left: 56vw; /*56vw*/
+    outline: 0.5vh solid black;
+    padding: 0.6vh 1.7vh 0.6vh 1.7vh;
+    height: 4.5vh;
+    text-align: center;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+
+}
+
+.join:hover{
+    padding-top:0.6vh;
+    padding-bottom: 0.6vh;
+    padding-left: 1.9vh;
+    padding-right: 1.9vh;
+    
+}
+
+/*animate log in button done*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes bookhol{
+    from{left:45vh}
+    to{left:90vh}
+}
+
+.book{
+    height: 186%;
+    width:60%;
+    z-index: 1;
+    position: absolute;
+    top: -337px;
+    left: 19vw;
+    animation-name:bookhol;
+    animation-delay: 2500ms;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    
+
+
+}
+
+@keyframes pahanahol{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.pahana{
+    /*outline: 2px solid brown;*/
+    opacity: 0;
+    height: 45vh;
+    width: 125vh;
+    z-index: 2;
+    position: absolute;
+    top: 30vh;
+    left: 3vh;
+    color: white;
+    font-weight: 550;
+    font-size: 5.5vw;
+    padding-left: 5vh;
+    font-family: 'Rubik Mono One', sans-serif;
+    animation-name: pahanahol;
+    animation-delay: 3200ms;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+.papercut{
+    position: absolute;
+    height: 342px;
+    width: 57%;
+    top: 671px;
+    left: -3vw;
+    position: absolute;
+    z-index: 3;
+    /*outline: 3px solid black;*/
+    transform: rotate(1deg);
+    
+    
+    
+}
+
+.papercut2{
+    height: 343px;
+    width: 63%;
+    top: 680px;
+    left: 44.5vw;
+    position: absolute;
+    z-index: 3;
+    /*outline: 3px solid black;*/
+    transform: rotate(1deg);
+    transform: rotateY(180deg);
+
+
+
+
+}
+
+
+/*.jawacont{
+
+    margin-inline:auto;
+    width:min(90%, 70.5rem);
+    outline:1px solid black;
+}*/
+
+.bookjawaya{
+    /*outline:3px solid red;*/
+    margin-top: -160vh;
+    margin-left: 0.4vh;
+    width: 223vh;
+    height: 70vh;
+    padding:3rem 0;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position:sticky;
+
+}
+
+.book01{
+    height: 75vh;
+    width: 120vh;
+    margin-right: 3vh;
+    /* outline: 3px solid black; */
+    z-index: 4;
+}
+    
+
+
+
+
+.jawayainfo{
+    /*outline:3px solid orange;*/
+    margin-left: 10vh;
+    height: 25vh;
+    width: 82vh;
+    text-align: left;
+    color: white;
+    font-size: 1.2vw;
+    z-index: 4;
+    font-family: 'Noto Sans Sinhala', sans-serif;
+    
+}
+
+
+
+
+.bookhudakala{
+    /*outline:3px solid rgb(255, 230, 0);*/
+    margin-top: 71px;
+    margin-left: 0.4vh;
+    width: 223vh;
+    height: 70vh;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*gap:65px;*/
+
+}
+
+.book02{
+    height: 75vh;
+    width: 120vh;
+    margin-right: 12vh;
+    /*outline: 3px solid black;*/
+    z-index: 4;
+    
+
+
+}
+
+.hudainfo{
+    /*outline:3px solid orange;*/
+    margin-left: 10vh;
+    height: 25vh;
+    width: 82vh;
+    text-align: left;
+    color: white;
+    font-size: 1.2vw;
+    z-index: 4;
+    font-family: 'Noto Sans Sinhala', sans-serif;
+    
+}

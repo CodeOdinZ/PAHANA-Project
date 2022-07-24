@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="CSS/form.css">
+    <script src="JS/forms.js" defer></script>
+    
+</head>
+<body>
+
+
+    <div class="preload">
+        <img src="IMG/bookload2.gif" class="gif">
+    </div>
+
+
+
+
+
+
+    <header>
+
+        
+        <nav class="navi">
+            
+                
+            <ul class="listsleft navlist">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="purchases.html">Purchases</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Appointments</a></li>
+                    
+            </ul>
+
+            <div class="butns">
+            <a href="books.html">
+                <button id="backbtn">
+                    << Back
+            </button></a>
+
+            <a href="#">
+                <button id="confirmbtn">
+                    Confirm Order >>
+            </button></a>
+            </div>
+        
+        </nav>
+
+        
+        
+    </header>
+
+    <div class="explain">
+        ✳️ Fill this form with your details to get the order delivered to your Doorstep.
+    </div>
+
+    <div class="formparent">
+        <form class="form" action="mail.php" method="post">
+            <input type="text" placeholder="First Name" name="fname" id="name1" class="space" required>
+            <input type="text" placeholder="Second Name" name="secname" id="name2" class="space" required>
+            <input type="text" placeholder="Your Addres Line 1" name="adresline1" id="adres1" class="space" required>
+            <input type="text" placeholder="Your Addres Line 2" name="adresline2" id="adres2" class="space" required>
+            <input type="text" placeholder="Your Addres Line 3" name="adresline3" id="adres3" class="space" required>
+            <input type="text" placeholder="Contact Number" name="contact" id="contact" class="space" required>
+            <input type="email" placeholder="E Mail (Optional)" name="email" id="email" class="space" required>
+            <div class="txtexplain">Your Orders:</div>
+            <textarea name="orders" id="textarea" class="spacetext"></textarea>
+            <textarea name="tmsrp" id="tprice" class="totalprice"></textarea>
+            <button type="submit" class="subbtn" id="sumit">SUBMIT</button>
+            
+        </form>
+
+    </div>
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        let loader= document.querySelector(".preload");
+
+        window.addEventListener("load" , ()=>{
+
+            loader.style.display= "none";
+        })
+    </script>
+
+
+
+
+
+
+</body>
+</html>

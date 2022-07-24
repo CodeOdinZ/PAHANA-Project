@@ -6,6 +6,287 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Sinhala:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@600&display=swap');
 
+
+
+@media only screen and (max-width:600px){
+
+html{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:url(../IMG/earth.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:-160px;    /*-144px for space*/
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+}
+
+.menubar{
+    max-width:27px;
+    height:auto;
+    margin-left:20px;
+    
+    
+}
+
+
+
+.preload{
+    display:none;
+}
+
+
+
+.listsright,.listsleft{
+    display:none;
+}
+a{
+    text-decoration: none;
+}
+
+header{
+    position:relative;
+    z-index:2;
+}
+
+
+
+
+.navi{
+    /*border:2px solid yellow;*/
+    margin-bottom:20px;
+    min-height:6vh;
+    display:flex;
+    width:100vw;
+    justify-content: flex-start;
+    align-items:center;
+    overflow: hidden;
+}
+
+.listsleft{
+    /*border:1px solid red;*/
+    list-style-type:none;
+    gap:2em;
+    padding:3px;
+    overflow: hidden;
+    opacity:0;
+    
+}
+
+
+.bookpic{
+    display:none;
+}
+
+.listsright{
+    /*border:1px solid red;*/
+    gap:2em;
+    list-style-type: none;
+    padding:3px;
+    overflow: hidden;
+    margin-left:auto;
+    opacity:0;
+    
+}
+.listsleft li a,.listsright li a{
+    color:white;
+    font-size:1.6rem;
+    font-family: 'Rum Raisin', sans-serif;
+    white-space: nowrap;
+    overflow:hidden;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+
+}
+
+.welinfo{
+    /*border: 3px solid red;*/
+    position: relative;
+    top: -10vh;
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    min-height: 94vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+    
+.pahana a{
+    color:#FF6B00;
+    padding:8px;
+    border:2px solid rgb(255, 255, 255);
+    font-size:0.8rem;
+    position: relative;
+    /*top:-20px;*/
+
+    
+}
+
+.pahana{
+    /*border:2px solid rgb(255, 255, 255);*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:10px;
+    align-items: flex-start;
+    color: aliceblue;
+    border-left:6px solid #FF6B00;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size:3.2em;
+    top:30px;
+    /*transform: translateX(48px);*/
+    z-index:2;
+    padding-left:22px;
+    margin-left:18px;
+   
+}
+
+.sinadv{
+    font-size:0.6rem;
+    font-family: 'Noto Sans Sinhala', sans-serif;
+    font-weight: 600;
+    position: relative;
+    /*top:-2px;*/
+    color:rgb(255, 255, 255);
+
+}
+
+.bgimg{
+    display:none;
+}
+
+.pahanapic{
+    height:auto;
+    max-width:325px;
+    position: relative;
+    top:-40px;
+}
+
+.public{
+    color:white;
+    border-left:3px solid #9f9f9f;
+    border-bottom: 3px solid #9f9f9f;
+    font-size:2rem;
+    margin-left:5px;
+    width:60%;
+    text-align:left;
+    position:relative;
+    top:-20vh;
+    font-family: 'Rum Raisin', sans-serif;
+    align-self: flex-start;
+}
+
+.arrow{
+    height:auto;
+    max-width:70px;
+    position:relative;
+    top:-16vh;
+}
+
+.jawayabk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bjwimg{
+    order:1;
+    height:auto;
+    width:545px;
+    margin-left:85px;
+}
+
+
+.bjwinfo{
+    color: white;
+    order:2;
+    text-align: center;
+    max-width: 345px;
+}
+
+.bjwinfo h2{
+    color:#FF9900;
+    
+}
+
+/*hudakala book*/
+
+.hubk{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.huimg{
+    order:1;
+    height:auto;
+    width:545px;
+    margin-left:-10px;
+}
+
+
+.huinfo{
+    color: white;
+    order:2;
+    text-align: center;
+    max-width: 345px;
+}
+
+.huinfo h2{
+    color:#FF9900;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:600px){
 body{
     margin:0;
     display:flex;
@@ -32,9 +313,15 @@ body{
     
 }
 
+.menubar{
+    
+    display:none;
+}
+
 
 .listsright,.listsleft, .navi .navlist{
     display:flex;
+    
 }
 
 a{
@@ -53,6 +340,7 @@ header{
     overflow: hidden;
     
     
+    
 }
 
 .listsleft{
@@ -64,6 +352,10 @@ header{
     
 }
 
+.arrow{
+    display:none;
+}
+
 
 .listsright{
     /*border:1px solid red;*/
@@ -72,7 +364,11 @@ header{
     padding:3px;
     overflow: hidden;
     margin-left:auto;
+    opacity:0;
     
+}
+.pahanapic{
+    display: none;
 }
 
 .hobut{
@@ -150,6 +446,26 @@ header{
     animation-duration: 900ms;
     animation-delay: 1.9s;
     z-index:2;
+}
+
+.sinadv{
+    font-size:1.1rem;
+    font-family: 'Noto Sans Sinhala', sans-serif;
+    font-weight: 600;
+
+}
+
+.public{
+    color: #000;
+    position: relative;
+    top: -880px;
+    font-size: 3.5rem;
+    margin-left: 56px;
+    font-family: 'Rum Raisin', sans-serif;
+    border-bottom:5px solid orange;
+    width:531px;
+    z-index:100;
+    
 }
 
 
@@ -285,4 +601,6 @@ header{
 .gif{
     width:auto;
     max-height:350px;
+}
+
 }

@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    padding:0;
+    gap:3px;
+    position:relative;
+    background-color: antiquewhite;
+}
+
+.navi{
+    display:flex;
+    /*border:1px solid red;*/
+    padding:5px 35px;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    
+    
+    
+}
+
+.listsleft{
+    /*border:1px solid red;*/
+    list-style-type:none;
+    padding-left:4px;
+    overflow: hidden;
+    display:flex;
+    justify-content: flex-start;
+    gap:2em;
+    
+}
+.listsleft li a{
+    color:rgb(0, 0, 0);
+    font-size:1.6rem;
+    font-family: 'Rum Raisin', sans-serif;
+    white-space: nowrap;
+    overflow:hidden;
+    transition-timing-function: ease-in-out;
+    transition-duration: 250ms;
+    
+
+}
+
+.listsleft li a:hover{
+    color:rgb(252, 151, 0);
+    
+}
+
+.butns{
+    margin-left: auto;
+}
+
+#backbtn{
+    background-color: rgb(219, 0, 55);
+    color: rgb(0, 0, 0);
+    font-family: 'Anton', sans-serif;
+    border:none;
+    height: 4.5vh;
+    min-width: 77px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    
+    
+}
+
+#backbtn:hover{
+    box-shadow: 0px 0px 10px 1px;
+}
+
+#confirmbtn{
+    background-color: rgb(5, 202, 31);
+    color: rgb(0, 0, 0);
+    font-family: 'Anton', sans-serif;
+    border:none;
+    height: 4.5vh;
+    min-width: 77px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    
+}
+
+#confirmbtn:hover{
+    box-shadow: 0px 0px 10px 1px;
+}
+
+.preload{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index:100;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;*/
+}
+
+.gif{
+    width:auto;
+    max-height:350px;
+}
+.formparent{
+    /*border:2px solid red;*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top:30px;
+    width:100%;
+    height:85vh;
+    
+
+}
+
+.explain{
+    color: rgb(255 94 0);
+    font-size:1.2rem;
+    font-family: 'Anton', sans-serif;
+    margin-left:38px;
+
+}
+
+.form{
+    /*border:2px solid red;*/
+    min-width: 485px;
+    min-height: 705px;
+    background-color: #000000;/*#bfbfbf*/
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    box-shadow: 0px 0px 20px 0px;
+    position: relative;
+    padding:3px;
+
+}
+
+.space{
+    min-width:434px;
+    min-height:20px;
+    background-color: white;
+    color: black;
+    font-size: 1.05rem;
+    font-family: 'Anton', sans-serif;
+    border:none;
+    border-radius: 10px;
+    padding:5px;
+}
+.txtexplain{
+    color: red;
+    align-self: flex-start;
+    margin-left:40px;
+    font-size: 1rem;
+    font-family: 'Anton', sans-serif;
+
+}
+
+input{
+    outline:none;
+}
+
+.spacetext{
+    min-width:434px;
+    min-height:102px;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    font-family: 'Anton', sans-serif;
+    border:none;
+    border-radius: 10px;
+    padding:5px;
+}
+
+.subbtn{
+    border: 1px;
+    border-color:#000000;
+    background-color: orange;
+    font-size: 1.4rem;
+    font-family: 'Rum Raisin', sans-serif;
+    color: black;
+    border-radius: 51px;
+    min-width: 106px;
+    min-height: 40px;
+}
+
+.totalprice{
+    background-color: #000;
+    color: white;
+    border:none;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size:1.25rem;
+    min-width:64px;
+    min-height:1px;
+    resize: none;
+    outline: none;
+}
+
+
+
+

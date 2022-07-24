@@ -1,8 +1,354 @@
 @import url('https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
+@media only screen and (max-width:600px){
+
+body{
+    background:url(../IMG/white\ papers.jpg);
+    background-size:cover;
+    background-repeat:repeat;
+    background-position:center; 
+    padding:0;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:5px;
+    
+}
+
+.preload, .listsleft{
+    display:none;
+}
+
+.navi{
+    
+    /*border:2px solid yellow;*/
+    margin-bottom:20px;
+    min-height:6vh;
+    display:flex;
+    width:100vw;
+    justify-content: flex-start;
+    align-items:center;
+    overflow: hidden;
+    
+}
 
 
+header{
+    display: flex;
+    justify-content: center;
+
+}
+
+.menubar{
+    max-width:27px;
+    height:auto;
+    margin-left:20px;
+    
+    
+}
+
+.shop{
+    color:#FF6B00;
+    text-align: center;
+    font-size:2rem;
+    font-family: 'Rum Raisin', sans-serif;
+    position: relative;
+    top:-5vh;
+
+}
+
+.tiles{
+    width:100%;
+    height:60vh;
+    border:none;
+    border-radius:40px;
+    background-color: rgb(255, 255, 255);
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
+    margin-right:83px;
+    background:url(../IMG/book\ shelf\ 2.jpg);
+    background-size:cover;
+    background-repeat:repeat;
+    background-position:129px 52px; 
+    box-shadow:0px 0px 20px 1px black;
+    gap:10px;
+    overflow: hidden;
+
+}
+
+
+.firsttiles{
+    /*border:2px solid blue;*/
+    height:520px; /*60vh*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:4px;
+    gap:50px;
+}
+
+/*booktile styling*/
+
+.booktile{
+    /*border:2px solid red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height:130px;
+    width: 420px;
+    border-radius: 25px;
+    /*box-shadow: 4px 4px 14px 0px black;*/
+    text-decoration: none;
+    background-color: rgb(255, 255, 255)/*#ffb649*/;
+    box-shadow:-7px 12px 14px 3px black;
+    
+    
+}
+
+.booktile div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border:2px solid red;*/
+    min-width:185px;
+    min-height:20px;
+}
+
+.btimg{
+    /*border:2px solid red;*/
+    max-width: 208px;
+    max-height: 220px;
+    position: relative;
+    padding:0;
+    margin:0;
+    
+}
+
+.btinfo{
+    /*border:2px solid red;*/
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 550;
+    text-align: center;
+    color: black;
+    font-family: 'Anton', sans-serif;
+    
+    
+}
+
+/*toytile styling*/
+
+.toytile{
+    /*border:2px solid green;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height:130px;
+    width: 420px;
+    border-radius: 25px;
+    /*box-shadow: 4px 4px 14px 0px black;*/
+    text-decoration: none;
+    background-color: white/*#fae1ad*/;
+    box-shadow:-7px 12px 14px 3px black;
+}
+
+.toytile div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border:2px solid red;*/
+    min-width:199px;
+    min-height:20px;
+}
+
+.ttimg{
+    max-width: 208px;
+    max-height: 159px;
+    position: relative;
+    padding:0;
+    margin:0;
+}
+
+.ttinfo{
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 550;
+    text-align: center;
+    color: black;
+    font-family: 'Anton', sans-serif;
+}
+/*second tile group*/
+
+.sectiles, .medtile{
+    /*border:2px solid blue;
+    height:40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:4px;
+    gap:1.2em;*/
+    /*position: relative;*/
+    display: none;
+    
+}
+
+.medtilein{
+    /*border:2px solid red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width:420px;
+    height:130px;
+    border-radius: 25px;
+    /*box-shadow: 4px 4px 14px 0px black;*/
+    text-decoration: none;
+    background-color: white/*#c484ff*/;
+    box-shadow:-7px 12px 14px 3px black;
+    
+}
+
+.medtilein div{
+    /*border:2px solid red;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width:225px;
+    min-height:20px;
+    
+}
+
+.medimg{
+    max-width: 88px;
+    max-height: 172px;
+    position: relative;
+    padding:0;
+    margin:0;
+    
+}
+
+.medinfo{
+    color: black;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 550;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:600px){
 body{
     margin:0;
     display:flex;
@@ -29,6 +375,10 @@ header{
     
 }
 
+.menubar{
+    display:none;
+}
+
 .listsleft{
     /*border:1px solid red;*/
     list-style-type:none;
@@ -44,6 +394,10 @@ header{
     color:rgb(252, 151, 0);
     font-size:1.6rem;
     font-family: 'Rum Raisin', sans-serif;
+}
+
+.medtilein{
+    display:none;
 }
 
 .listsleft li a{
@@ -235,4 +589,6 @@ header{
 .gif{
     width:auto;
     max-height:350px;
+}
+
 }
