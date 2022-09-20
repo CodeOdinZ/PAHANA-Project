@@ -38,6 +38,7 @@ body{
 header{
     display: flex;
     justify-content: center;
+    
 
 }
 
@@ -106,8 +107,9 @@ header{
     border-radius: 25px;
     /*box-shadow: 4px 4px 14px 0px black;*/
     text-decoration: none;
-    background-color: rgb(255, 255, 255)/*#ffb649*/;
+    /*background-color: rgb(255, 255, 255)/*#ffb649*/;
     box-shadow:-7px 12px 14px 3px black;
+    border:5px solid black;
     
     
 }
@@ -156,8 +158,9 @@ header{
     border-radius: 25px;
     /*box-shadow: 4px 4px 14px 0px black;*/
     text-decoration: none;
-    background-color: white/*#fae1ad*/;
+    /*background-color: white/*#fae1ad*/;
     box-shadow:-7px 12px 14px 3px black;
+    border:5px solid black;
 }
 
 .toytile div{
@@ -212,8 +215,9 @@ header{
     border-radius: 25px;
     /*box-shadow: 4px 4px 14px 0px black;*/
     text-decoration: none;
-    background-color: white/*#c484ff*/;
+    /*background-color: white/*#c484ff*/;
     box-shadow:-7px 12px 14px 3px black;
+    border:5px solid black;
     
 }
 
@@ -357,11 +361,16 @@ body{
     gap:3px;
     position:relative;
     background-color: antiquewhite;
+    
 }
 
 header{
     /*border:2px solid red;*/
     margin:0;
+    background-color: #000;
+    position: fixed;
+    z-index: 10;
+    width:100vw;
 }
 
 .navi{
@@ -378,6 +387,8 @@ header{
 .menubar{
     display:none;
 }
+
+
 
 .listsleft{
     /*border:1px solid red;*/
@@ -401,7 +412,7 @@ header{
 }
 
 .listsleft li a{
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     font-size:1.6rem;
     font-family: 'Rum Raisin', sans-serif;
     white-space: nowrap;
@@ -424,7 +435,8 @@ header{
     font-size:3.9rem;
     font-family: 'Rum Raisin', sans-serif;
     position: relative;
-    top:-5vh;
+    top:50px;
+    display: none;
 }
 
 .tiles{
@@ -432,8 +444,10 @@ header{
     height:50vh;
     display:flex;
     flex-direction:column;
-    padding:13px 350px;
+    
     gap:1em;
+    margin-top:230px;
+
 
 }
 
@@ -447,6 +461,7 @@ header{
     align-items: center;
     padding:4px;
     gap:1.2em;
+    align-self: center;
 }
 
 /*booktile styling*/
@@ -462,7 +477,8 @@ header{
     border-radius: 25px;
     /*box-shadow: 4px 4px 14px 0px black;*/
     text-decoration: none;
-    background-color: #ffb649;
+    /*background-color: #ffb649;*/
+    border:5px solid black;
     
     
 }
@@ -492,7 +508,7 @@ header{
 
 .toytile{
     /*border:2px solid green;*/
-    background-color: rgb(237 197 165);
+    /*background-color: rgb(237 197 165);*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -503,6 +519,7 @@ header{
     border-radius: 25px;
     /*box-shadow: 4px 4px 14px 0px black;*/
     text-decoration: none;
+    border:5px solid black;
 }
 
 .ttimg{
@@ -545,7 +562,8 @@ header{
     border-radius: 25px;
     /*box-shadow: 4px 4px 14px 0px black;*/
     text-decoration: none;
-    background-color: #c484ff;
+    /*background-color: #c484ff;*/
+    border:5px solid black;
 }
 
 .medimg{
@@ -590,5 +608,9 @@ header{
     width:auto;
     max-height:350px;
 }
+
+
+
+
 
 }

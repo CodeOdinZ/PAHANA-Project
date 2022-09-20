@@ -2,216 +2,629 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
-a{
-    text-decoration: none;
+@media screen and (max-width:620px){
+
+
+    a{
+        text-decoration: none;
+    }
+
+    .mailbx{
+        display: none;
+    }
+    
+    ul{
+        list-style-type: none;
+    }
+    
+    body{
+        margin:0;
+        display:flex;
+        flex-direction: column;
+        padding:0;
+        gap:1.5vh;
+        position:relative;
+        background-color: antiquewhite;
+    }
+    
+    .navi{
+        display:flex;
+        /*border:1px solid red;*/
+        padding:5px 35px;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
+        
+        
+        
+    }
+    
+    .listsleft{
+        /*border:1px solid red;*/
+        list-style-type:none;
+        padding-left:4px;
+        overflow: hidden;
+        display:none;
+        justify-content: flex-start;
+        gap:2em;
+        position: absolute;
+        
+        
+    }
+    .listsleft li a{
+        color:rgb(0, 0, 0);
+        font-size:1.6rem;
+        font-family: 'Rum Raisin', sans-serif;
+        white-space: nowrap;
+        overflow:hidden;
+        transition-timing-function: ease-in-out;
+        transition-duration: 250ms;
+        
+    
+    }
+    
+    .listsleft li a:hover{
+        color:rgb(252, 151, 0);
+        
+    }
+    
+    .butns{
+        margin-left: auto;
+    }
+    
+    #backbtn{
+        background-color: rgb(219, 0, 55);
+        color: rgb(0, 0, 0);
+        font-family: 'Anton', sans-serif;
+        border:none;
+        height: 4.5vh;
+        min-width: 77px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        
+        
+    }
+    
+    #backbtn:hover{
+        box-shadow: 0px 0px 10px 1px;
+    }
+    
+    #confirmbtn{
+        background-color: rgb(5, 202, 31);
+        color: rgb(0, 0, 0);
+        font-family: 'Anton', sans-serif;
+        border:none;
+        height: 4.5vh;
+        min-width: 77px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        display: none;
+        
+    }
+    
+    #confirmbtn:hover{
+        box-shadow: 0px 0px 10px 1px;
+    }
+    
+    .preload{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index:100;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30%;*/
+    }
+    
+    .gif{
+        width:auto;
+        max-height:350px;
+    }
+    .formparent{
+        /*border:2px solid red;*/
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        top:30px;
+        width:100%;
+        height:83vh;
+        
+        
+    
+    }
+    
+    .explain{
+        color: rgb(255 94 0);
+        font-size:1.2rem;
+        font-family: 'Anton', sans-serif;
+        margin-left:38px;
+        margin-bottom:6.5vh;
+    
+    }
+    
+    .form{
+        /*border:2px solid red;*/
+        min-width: 90vw;
+        min-height: 705px;
+        background-color: #000000;/*#bfbfbf*/
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
+        box-shadow: 0px 0px 20px 0px;
+        position: relative;
+        padding:3px;
+        margin:21px;
+    
+    }
+    
+    .space{
+        min-width:81vw;
+        min-height:20px;
+        background-color: white;
+        color: black;
+        font-size: 1.05rem;
+        font-family: 'Anton', sans-serif;
+        border:none;
+        border-radius: 10px;
+        padding:5px;
+    }
+    .txtexplain{
+        color: red;
+        align-self: flex-start;
+        margin-left:40px;
+        font-size: 1rem;
+        font-family: 'Anton', sans-serif;
+    
+    }
+    
+    input{
+        outline:none;
+    }
+    
+    .spacetext{
+        min-width:81vw;
+        min-height:102px;
+        background-color: white;
+        color: black;
+        font-size: 1rem;
+        font-family: 'Anton', sans-serif;
+        border:none;
+        border-radius: 10px;
+        padding:5px;
+    }
+    
+    .subbtn{
+        border: 1px;
+        border-color:#000000;
+        background-color: orange;
+        font-size: 1.4rem;
+        font-family: 'Rum Raisin', sans-serif;
+        color: black;
+        border-radius: 51px;
+        min-width: 106px;
+        min-height: 40px;
+        cursor: pointer;
+    }
+    
+    .totalprice{
+        background-color: #000;
+        color: white;
+        border:none;
+        text-align: center;
+        font-family: 'Acme', sans-serif;
+        font-size:1.25rem;
+        min-width:64px;
+        min-height:1px;
+        resize: none;
+        outline: none;
+    }
+    
+    
+    #popup{
+        text-align: center;
+        width:30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width:300px;
+        border:none;
+        margin:0px 410px;
+        position: relative;
+        z-index:200;
+        top:-1200px;
+        background-color: rgb(255, 255, 255);
+        border-radius:30px;
+        box-shadow: 4px 4px 14px 0px black;
+        padding:10px;
+        transition-timing-function: ease-in-out;
+        transition-duration: 400ms;
+        opacity:0;
+        align-self: center;
+        
+        
+    }
+    
+    #popup p{
+        font-weight: 600;
+        font-size:1.23rem;
+        font-family: 'Roboto', sans-serif;
+        padding-left:20px;
+        padding-right:20px;
+    }
+    
+    
+    #popb{
+        position: relative;
+        top:20px;
+        z-index:200;
+        max-width:108px;
+        background-color: aqua;
+        margin-left:30px;
+    }
+    
+    .tick{
+        height:auto;
+        width:100px;
+    }
+    
+    .returnh{
+        color: white;
+        background-color: rgb(255, 115, 0);
+        border-radius:20px;
+        font-size: 1rem;
+        outline: none;
+        border:1px solid rgb(255, 255, 255);
+        margin-top:10px;
+        font-family: sans-serif;
+        
+        border-radius: 10px;
+        min-width: 106px;
+        min-height: 40px;
+        cursor: pointer;
+    
+    }
+    
+    form p{
+        color:white;
+        position:absolute;
+        top:577px;
+    }
+
 }
 
-ul{
-    list-style-type: none;
-}
 
-body{
-    margin:0;
-    display:flex;
-    flex-direction: column;
-    padding:0;
-    gap:3px;
-    position:relative;
-    background-color: antiquewhite;
-}
 
-.navi{
-    display:flex;
-    /*border:1px solid red;*/
-    padding:5px 35px;
-    justify-content: flex-start;
-    align-items: center;
-    overflow: hidden;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:620px){
+
+    a{
+        text-decoration: none;
+
+    }
+
+    ul{
+        list-style-type: none;
+    }
+
+    body{
+        margin:0;
+        display:flex;
+        flex-direction: column;
+        padding:0;
+        gap:3px;
+        position:relative;
+        background-color: antiquewhite;
+    }
+
+    .navi{
+        display:flex;
+        /*border:1px solid red;*/
+        padding:5px 35px;
+        justify-content: flex-start;
+        align-items: center;
+        overflow: hidden;
     
     
     
-}
+    }
 
-.listsleft{
-    /*border:1px solid red;*/
-    list-style-type:none;
-    padding-left:4px;
-    overflow: hidden;
-    display:flex;
-    justify-content: flex-start;
-    gap:2em;
+    .listsleft{
+        /*border:1px solid red;*/
+        list-style-type:none;
+        padding-left:4px;
+        overflow: hidden;
+        display:flex;
+        justify-content: flex-start;
+        gap:2em;
     
-}
-.listsleft li a{
-    color:rgb(0, 0, 0);
-    font-size:1.6rem;
-    font-family: 'Rum Raisin', sans-serif;
-    white-space: nowrap;
-    overflow:hidden;
-    transition-timing-function: ease-in-out;
-    transition-duration: 250ms;
-    
-
-}
-
-.listsleft li a:hover{
-    color:rgb(252, 151, 0);
-    
-}
-
-.butns{
-    margin-left: auto;
-}
-
-#backbtn{
-    background-color: rgb(219, 0, 55);
-    color: rgb(0, 0, 0);
-    font-family: 'Anton', sans-serif;
-    border:none;
-    height: 4.5vh;
-    min-width: 77px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    
-    
-}
-
-#backbtn:hover{
-    box-shadow: 0px 0px 10px 1px;
-}
-
-#confirmbtn{
-    background-color: rgb(5, 202, 31);
-    color: rgb(0, 0, 0);
-    font-family: 'Anton', sans-serif;
-    border:none;
-    height: 4.5vh;
-    min-width: 77px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    
-}
-
-#confirmbtn:hover{
-    box-shadow: 0px 0px 10px 1px;
-}
-
-.preload{
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    z-index:100;
-    background: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30%;*/
-}
-
-.gif{
-    width:auto;
-    max-height:350px;
-}
-.formparent{
-    /*border:2px solid red;*/
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    top:30px;
-    width:100%;
-    height:85vh;
+    }
+    .listsleft li a{
+        color:rgb(0, 0, 0);
+        font-size:1.6rem;
+        font-family: 'Rum Raisin', sans-serif;
+        white-space: nowrap;
+        overflow:hidden;
+        transition-timing-function: ease-in-out;
+        transition-duration: 250ms;
     
 
-}
+    }
 
-.explain{
-    color: rgb(255 94 0);
-    font-size:1.2rem;
-    font-family: 'Anton', sans-serif;
-    margin-left:38px;
+    .listsleft li a:hover{
+        color:rgb(252, 151, 0);
+    
+    }
 
-}
+    .butns{
+        margin-left: auto;
+    }
 
-.form{
-    /*border:2px solid red;*/
-    min-width: 485px;
-    min-height: 705px;
-    background-color: #000000;/*#bfbfbf*/
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap:15px;
-    box-shadow: 0px 0px 20px 0px;
-    position: relative;
-    padding:3px;
+    #backbtn{
+        background-color: rgb(0, 128, 233);
+        color: rgb(0, 0, 0);
+        font-family: 'Anton', sans-serif;
+        border:none;
+        height: 4.5vh;
+        min-width: 77px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        box-shadow: inset 0.2em 0.2em 0.2em 0 rgba(255,255,255,0.5), inset -0.2em -0.2em 0.2em 0 rgba(0,0,0,0.5);
+    
+    
+    }
 
-}
+    #backbtn:hover{
+        box-shadow: 0px 0px 10px 1px;
+    }
 
-.space{
-    min-width:434px;
-    min-height:20px;
-    background-color: white;
-    color: black;
-    font-size: 1.05rem;
-    font-family: 'Anton', sans-serif;
-    border:none;
-    border-radius: 10px;
-    padding:5px;
-}
-.txtexplain{
-    color: red;
-    align-self: flex-start;
-    margin-left:40px;
-    font-size: 1rem;
-    font-family: 'Anton', sans-serif;
+    #confirmbtn{
+        background-color: rgb(5, 202, 31);
+        color: rgb(0, 0, 0);
+        font-family: 'Anton', sans-serif;
+        border:none;
+        height: 4.5vh;
+        min-width: 77px;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        display: none;
+    
+    }
 
-}
+    #confirmbtn:hover{
+        box-shadow: 0px 0px 10px 1px;
+    }
 
-input{
-    outline:none;
-}
+    .preload{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index:100;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30%;*/
+    }
 
-.spacetext{
-    min-width:434px;
-    min-height:102px;
-    background-color: white;
-    color: black;
-    font-size: 1rem;
-    font-family: 'Anton', sans-serif;
-    border:none;
-    border-radius: 10px;
-    padding:5px;
-}
+    .gif{
+        width:auto;
+        max-height:350px;
+    }
+    .formparent{
+        /*border:2px solid red;*/
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        top:30px;
+        width:100%;
+        height:85vh;
+        gap:100px;
+    
 
-.subbtn{
-    border: 1px;
-    border-color:#000000;
-    background-color: orange;
-    font-size: 1.4rem;
-    font-family: 'Rum Raisin', sans-serif;
-    color: black;
-    border-radius: 51px;
-    min-width: 106px;
-    min-height: 40px;
-}
+    }   
 
-.totalprice{
-    background-color: #000;
-    color: white;
-    border:none;
-    text-align: center;
-    font-family: 'Acme', sans-serif;
-    font-size:1.25rem;
-    min-width:64px;
-    min-height:1px;
-    resize: none;
-    outline: none;
+    .explain{
+        color: rgb(255 94 0);
+        font-size:1.2rem;
+        font-family: 'Anton', sans-serif;
+        margin-left:38px;
+
+    }
+
+    .form{
+        /*border:2px solid red;*/
+        min-width: 485px;
+        min-height: 705px;
+        background-color: #000000;/*#bfbfbf*/
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
+        box-shadow: 0px 0px 20px 0px;
+        position: relative;
+        padding:3px;
+
+    }
+
+    .space{
+        min-width:434px;
+        min-height:20px;
+        background-color: white;
+        color: black;
+        font-size: 1.05rem;
+        font-family: 'Anton', sans-serif;
+        border:none;
+        border-radius: 10px;
+        padding:5px;
+    }
+    .txtexplain{
+        color: red;
+        align-self: flex-start;
+        margin-left:40px;
+        font-size: 1rem;
+        font-family: 'Anton', sans-serif;
+
+    }
+
+    input{
+        outline:none;
+    }
+
+    .spacetext{
+        min-width:434px;
+        min-height:102px;
+        background-color: white;
+        color: black;
+        font-size: 1rem;
+        font-family: 'Anton', sans-serif;
+        border:none;
+        border-radius: 10px;
+        padding:5px;
+    }
+
+    .subbtn{
+        border: 1px;
+        border-color:#000000;
+        background-color: orange;
+        font-size: 1.4rem;
+        font-family: 'Rum Raisin', sans-serif;
+        color: black;
+        border-radius: 51px;
+        min-width: 106px;
+        min-height: 40px;
+        cursor: pointer;
+    }
+
+    .totalprice{
+        background-color: #000;
+        color: white;
+        border:none;
+        text-align: center;
+        font-family: 'Acme', sans-serif;
+        font-size:1.25rem;
+        min-width:64px;
+        min-height:1px;
+        resize: none;
+        outline: none;
+    }
+
+
+    #popup{
+        text-align: center;
+        width:30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width:300px;
+        border:none;
+        margin:0px 410px;
+        position: relative;
+        z-index:200;
+        top:-1200px;
+        background-color: rgb(255, 255, 255);
+        border-radius:30px;
+        box-shadow: 4px 4px 14px 0px black;
+        padding:10px;
+        transition-timing-function: ease-in-out;
+        transition-duration: 400ms;
+        opacity:0;
+        align-self: center;
+    
+    
+    }
+
+    #popup p{
+        font-weight: 600;
+        font-size:1.23rem;
+        font-family: 'Roboto', sans-serif;
+        padding-left:20px;
+        padding-right:20px;
+    }
+
+
+    #popb{
+        position: relative;
+        top:20px;
+        z-index:200;
+        max-width:108px;
+        background-color: aqua;
+        margin-left:30px;
+    }
+
+    .tick{
+        height:auto;
+        width:100px;
+    }
+
+    .returnh{
+        color: white;
+        background-color: rgb(255, 115, 0);
+        border-radius:20px;
+        font-size: 1rem;
+        outline: none;
+        border:1px solid rgb(255, 255, 255);
+        margin-top:10px;
+        font-family: sans-serif;
+        
+        border-radius: 10px;
+        min-width: 106px;
+        min-height: 40px;
+        cursor: pointer;
+
+    }
+
+
+
+    .mailbx{
+        height:auto;
+        max-width:25vw;
+    }
+
+    form p{
+        color:white;
+        position:absolute;
+        top:577px;
+    }
 }
 
 

@@ -1,0 +1,1273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+@media screen and (max-width:600px){
+
+    .bgimg{
+
+        background-image: url(../IMG/medmats.jpg);
+        height:730vh;
+        width:100%;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:50px;
+       
+    }
+    
+    body{
+        padding: 0;
+        margin: 0;
+        
+    }
+    
+    .logoimg{
+        height: auto;
+        width: 25vw;
+        position: absolute;
+        left: 16px;
+        top: 8px;
+        border-radius: 25px;
+        
+        
+    }
+
+    .cartdata{
+        position: fixed;
+        /*left: 295px;
+        top: 11px;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffffd6;
+        border-radius: 16px;
+        padding: 6px;
+        right:2vw;
+        top:10px;
+        
+    }
+    
+    .cart{
+        height:auto;
+        width:40px;
+
+                
+        
+    }
+    
+    #supdata{
+        margin:0;
+        padding:2px;
+        background-color: red;
+        color:white;
+        border-radius:100%;
+        font-size:0.8rem;
+        height:1em;
+        width:1em;
+        font-weight:550;
+        align-self:flex-end;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    
+    .matoptimg{
+        height:auto;
+        width:880px;
+        margin-top:30px;
+        display: none;
+        
+        
+    }
+    
+    .explore{
+        position: absolute;
+        top:110px;
+        right:110px;
+        font-size: 1.4rem;
+        font-family: 'Roboto Slab', serif;
+        letter-spacing: 2px;
+        font-weight: 550;
+        text-align: center;
+    }
+    
+    .buying{
+        /*border:5px solid rgb(255, 255, 255);*/
+        height:auto;
+        width:86%;
+        /*position: absolute;
+        top:30vh;*/
+        margin-top:35vh;
+        left:12px;
+        display: flex;
+        flex-direction: column;
+        padding:15px;
+        background-color: rgb(0 0 0 / 71%);
+        border-radius:20px;
+        
+        
+    } 
+
+    
+    
+    .buying h2{
+        color:#a3a3a3;
+        font-size: 1.8rem;
+        font-family: 'Roboto Slab', serif;
+        letter-spacing: 9px;
+        align-self: center;
+        margin:0;
+        padding:0;
+        text-align: center;
+    }
+    
+    .buying h1{
+        color:white;
+        font-size: 2.8rem;
+        font-family: 'Roboto Slab', serif;
+        letter-spacing: 4px;
+        align-self: center;
+        margin:0;
+        padding:0;
+        text-align: center;
+    }
+    
+    .buying p{
+        color:rgb(159 159 159);
+        font-size: 1.3rem;
+        font-weight:550;
+        font-family: 'Roboto Slab', serif;
+        padding: 0;
+        margin: 0;
+        margin-top:20px;
+    }
+    
+    .adv{
+        height:auto;
+        width:175vw;
+        position: absolute;
+        top:65px;
+        right:10px;
+        border-radius: 20px;
+        display: none;
+    }
+    
+    .preload{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index:100;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30%;*/
+    }
+    
+    .gif{
+        width:auto;
+        max-height:350px;
+    }
+    
+    .bagdec{
+        display: flex;
+        border:5px solid rgb(0, 0, 0);
+        text-align: center;
+        align-items: center;
+        gap:20px;
+        font-size: 1.5rem;
+        font-family: 'Roboto Slab', serif;
+        max-width:40vw;
+        height:10vh; /*32vh*/
+        width:35vw;
+        /*background-color: rgb(0, 0, 0);*/
+        background-color: rgb(0 0 0 / 71%);
+        padding:15px;
+        border-radius:30px;
+        color:white;
+        /*margin-top:50px;*/
+        position: absolute;
+        top:393px;
+        right:50px;
+        display: none;
+        
+    }
+    
+    .bagdec img{
+        height: auto;
+        width:14vw;
+        border-radius: 25px;
+        border:5px solid white;
+        box-shadow: 9px 8px 20px 0px black;
+    }
+    
+    .options{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        margin: left -42px;
+        gap:28px;
+        
+    
+    }
+
+    .options li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+
+    .add,.cnt{
+        height:39px;
+        width:57px;
+        font-size:1.1rem;
+    }
+
+    .matimage{
+        height:auto;
+        width:33vw;
+        margin-right:11px;
+    }
+    
+    .homepg{
+        background-color: #ff7c00;
+        
+        padding:5px;
+        color: white;
+        text-decoration: none;
+        align-self: center;
+        
+        font-family: 'Roboto Slab', serif;
+    }
+    
+    .instruct{
+        position: absolute;
+        top:90vh;
+        right:217px;
+        font-size:2rem;
+        color:white;
+        border:none;
+        background-color: #ff003b;
+        border-radius: 20px;
+        padding:12px;
+        font-family: 'Acme', sans-serif;
+        display: none;
+        
+    
+    }
+    
+    .btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:12px;
+    }
+    
+    
+    .proceed{
+        background-color: #2fb12f;
+        margin-top:60px;
+        padding:5px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Roboto Slab', serif;
+        
+        
+    }
+    
+    .browse{
+        background-color: #ff1100;
+        
+        padding:5px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Roboto Slab', serif;
+        align-self: center;
+        
+    }
+
+    .proceed,.browse,.homepg{
+        height:38px;
+        width:286px;
+        font-size:1.5rem;
+        border-radius:45px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .add{
+        color: white;
+        
+        background-color: rgb(55, 121, 241);
+        border-radius: 6px;
+        outline: none;
+        border:none;
+        padding:5px;
+        
+    
+    }
+    
+    .cnt{
+        color: white;
+        background-color: rgb(255, 153, 0);
+        border-radius: 6px;
+        outline: none;
+        border:none;
+        padding:5px;
+        
+    }
+
+    .secondpart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:44px;
+        
+    }
+    
+    .matinfoeng{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        /*margin-top:420vh;*/
+        gap:46px;
+        /*border:5px solid black;*/
+        padding: 10px;;
+        flex-direction: column;
+        width:87vw;
+        
+    }
+    
+    .matpic{
+        height:auto;
+        width:80vw;
+        
+    }
+    
+    .matpic2{
+        height:auto;
+        width:76.5vw;
+    }
+    
+    .infoeng{
+        text-align: center;
+        width:84vw;/*575px*/
+        font-size: 1.2rem;
+        line-height: 34px;
+        background-color: rgb(0 0 0 / 71%);
+        padding:10px;
+        border-radius:45px;
+        color:wheat;
+        
+    
+    }
+    
+    .matinfosin p a{
+        text-decoration: none;
+        color:#e92000;
+    }
+    
+    .gallery{
+        display: flex;
+        justify-content: center;
+        /*margin-top:30px;*/
+        padding-bottom:50px;
+        flex-direction: column;
+        
+        gap:15px;
+        
+    }
+    
+    .galrytpc{
+        text-align: left;
+        /*margin-top:24vh;*/
+        font-size: 1.5rem;
+    }
+    
+    .give1{
+        height:23vh;
+        width:88vw;
+    }
+    
+    .give2{
+        height:23vh;
+        width:88vw;
+    }
+    
+    .give3{
+        height:23vh;
+        width:88vw;
+    }
+    
+    .give4{
+        height:43vh;
+        width:45vw;
+        align-self: center;
+    }
+
+    .galleryprnt{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width:100vw;
+    }
+    
+    .matinfosin{
+    /*position: absolute;
+    top:682px;
+    /*right:100px;*/
+    padding: 11px;
+    border: 5px solid black;
+    width: 87vw;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 550;
+    /*margin-top: 120vh;*/
+    background-color: #f9a53d;
+    align-self: center;
+    }
+    
+    .matinfosin p{
+        padding:0;
+        margin:0;
+        margin-bottom:15px;
+        
+    }
+    
+    .fb{
+        color: wheat;
+        background-color: rgb(55, 121, 241);
+        padding:9px;
+        text-decoration: none;
+        border-radius: 12px;
+        
+        
+        
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1577px) and (min-width:600px){
+
+    .bgimg{
+        background-image: url(../IMG/medmats.jpg);
+        height:100vh;
+        width:100%;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .logoimg{
+        height: auto;
+        width:14vw;
+        position: absolute;
+        left:8px;
+        top:8px;
+        border-radius:25px;
+        
+        
+    }
+    
+    .cartdata{
+        position: absolute;
+        left:15px;
+        top:262px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .cart{
+        height:auto;
+        width:50px;
+        
+        
+    }
+    
+    #supdata{
+        margin:0;
+        padding:2px;
+        background-color: red;
+        color:white;
+        border-radius:100%;
+        font-size:1rem;
+        height:1.5em;
+        width:1.5em;
+        font-weight:550;
+        align-self:flex-end;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .matoptimg{
+        height:auto;
+        width:880px;
+        margin-top:30px;
+        
+        
+    }
+    
+    .matimage{
+        display: none;
+    }
+    
+    .explore{
+        position: absolute;
+        top:-10px;
+        right:27px;
+        font-size: 1.7rem;
+        font-family: 'Roboto Slab', serif;
+        letter-spacing: 2px;
+        font-weight: 550;
+    }
+    
+    .buying{
+        /*border:5px solid rgb(255, 255, 255);*/
+        height:auto;
+        width:880px;
+        position: absolute;
+        top:365px;
+        
+        display: flex;
+        flex-direction: column;
+        padding:15px;
+        background-color: rgb(0 0 0 / 71%);
+        border-radius:20px;
+        
+        
+    }
+    
+    .buying h2{
+        color:#a3a3a3;
+        font-size: 1.5rem;
+        font-family: 'Roboto Slab', serif;
+        letter-spacing: 9px;
+        align-self: center;
+        margin:0;
+        padding:0;
+    }
+    
+    .buying h1{
+        color:white;
+        font-size: 2.1rem;
+        font-family: 'Roboto Slab', serif;
+        letter-spacing: 4px;
+        align-self: center;
+        margin:0;
+        padding:0;
+    }
+    
+    .buying p{
+        color:rgb(159 159 159);
+        font-size: 1.5rem;
+        font-weight:550;
+        font-family: 'Roboto Slab', serif;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .adv{
+        height:auto;
+        width:32vw;
+        position: absolute;
+        top:65px;
+        right:10px;
+        border-radius: 20px;
+    }
+    
+    .preload{
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index:100;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /*background-repeat: no-repeat;
+        background-position: center;
+        background-size: 30%;*/
+    }
+    
+    .gif{
+        width:auto;
+        max-height:350px;
+    }
+    
+    .bagdec{
+        display: flex;
+        border:5px solid rgb(0, 0, 0);
+        text-align: center;
+        align-items: center;
+        gap:20px;
+        font-size: 1.5rem;
+        font-family: 'Roboto Slab', serif;
+        
+        height:10vh; /*32vh*/
+        width:700px;
+        /*background-color: rgb(0, 0, 0);*/
+        background-color: rgb(0 0 0 / 71%);
+        padding:15px;
+        border-radius:30px;
+        color:white;
+        margin-top:150px;
+        
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+    .bagdec img{
+        height: auto;
+        width:245px;
+        border-radius: 25px;
+        border:5px solid white;
+        box-shadow: 9px 8px 20px 0px black;
+    }
+    
+    .options{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style-type: none;
+        margin-left:10px;
+        gap:100px;
+    
+    }
+    
+    .homepg{
+        background-color: #ff7c00;
+        border-radius: 6px;
+        padding:5px;
+        color: white;
+        text-decoration: none;
+        align-self: center;
+        font-size: 1.2rem;
+        font-family: 'Roboto Slab', serif;
+    }
+    
+    .instruct{
+        position: absolute;
+        top:90vh;
+        /*right:217px;*/
+        font-size:2rem;
+        color:white;
+        border:none;
+        background-color: #ff003b;
+        border-radius: 20px;
+        padding:12px;
+        font-family: 'Acme', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        
+    
+    }
+    
+    .btns{
+        display: flex;
+        justify-content: center;
+        gap:12px;
+    }
+    
+    
+    .proceed{
+        background-color: #2fb12f;
+        border-radius: 6px;
+        padding:5px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Roboto Slab', serif;
+        
+        font-size: 1.2rem
+    }
+    
+    .browse{
+        background-color: #ff1100;
+        border-radius: 6px;
+        padding:5px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Roboto Slab', serif;
+        align-self: center;
+        font-size: 1.2rem
+    }
+    
+    .add{
+        color: white;
+        
+        background-color: rgb(55, 121, 241);
+        border-radius: 6px;
+        outline: none;
+        border:none;
+        padding:5px;
+        font-size: 1.2rem;
+    
+    }
+    
+    .cnt{
+        color: white;
+        background-color: rgb(255, 153, 0);
+        border-radius: 6px;
+        outline: none;
+        border:none;
+        padding:5px;
+        font-size: 1.2rem;
+    }
+    
+    .matinfoeng{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        margin-top:110px;
+        gap:46px;
+        /*border:5px solid black;*/
+        padding: 10px;;
+        
+    }
+    
+    .matpic{
+        height:auto;
+        width:30vw;
+        
+    }
+    
+    .matpic2{
+        height:auto;
+        width:22.5vw;
+    }
+    
+    .infoeng{
+        text-align: center;
+        width:30vw;/*575px*/
+        font-size: 1.2rem;
+        line-height: 34px;
+        background-color: rgb(0 0 0 / 71%);
+        padding:10px;
+        border-radius:45px;
+        color:wheat;
+    
+    }
+    
+    .matinfosin p a{
+        text-decoration: none;
+        color:#e92000;
+    }
+    
+    .gallery{
+        display: flex;
+        justify-content: center;
+        margin-top:30px;
+        padding-bottom:50px;
+        
+        gap:15px;
+        
+    }
+    
+    .galrytpc{
+        text-align: center;
+        margin-top:15px;
+        font-size: 1.5rem;
+    }
+    
+    .give1{
+        height:23vh;
+        width:23vw;
+    }
+    
+    .give2{
+        height:23vh;
+        width:20vw;
+    }
+    
+    .give3{
+        height:23vh;
+        width:18vw;
+    }
+    
+    .give4{
+        height:23vh;
+        width:7vw;
+    }
+    
+    .matinfosin{
+        /*position: absolute;
+        top:313px;
+        right:100px;*/
+        padding:11px;
+        border:5px solid black;
+        width:80vw;
+        text-align: left;
+        font-size: 1.2rem;
+        font-weight: 550;
+        margin-top:1125px;
+        background-color: #f9a53d;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .matinfosin p{
+        padding:0;
+        margin:0;
+        margin-bottom:15px;
+        
+    }
+    
+    .fb{
+        color: wheat;
+        background-color: rgb(55, 121, 241);
+        padding:9px;
+        text-decoration: none;
+        border-radius: 12px;
+        
+        
+        
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1577px){
+.bgimg{
+    background-image: url(../IMG/medmats.jpg);
+    height:100vh;
+    width:100%;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.logoimg{
+    height: auto;
+    width:14vw;
+    position: absolute;
+    left:8px;
+    top:8px;
+    border-radius:25px;
+    
+    
+}
+
+.cartdata{
+    position: absolute;
+    left:15px;
+    top:262px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.cart{
+    height:auto;
+    width:50px;
+    
+    
+}
+
+#supdata{
+    margin:0;
+    padding:2px;
+    background-color: red;
+    color:white;
+    border-radius:100%;
+    font-size:1rem;
+    height:1.5em;
+    width:1.5em;
+    font-weight:550;
+    align-self:flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.matoptimg{
+    height:auto;
+    width:880px;
+    margin-top:30px;
+    
+    
+}
+
+.matimage{
+    display: none;
+}
+
+.explore{
+    position: absolute;
+    top:-10px;
+    right:27px;
+    font-size: 1.7rem;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 2px;
+    font-weight: 550;
+}
+
+.buying{
+    /*border:5px solid rgb(255, 255, 255);*/
+    height:auto;
+    width:880px;
+    position: absolute;
+    top:365px;
+    left:12px;
+    display: flex;
+    flex-direction: column;
+    padding:15px;
+    background-color: rgb(0 0 0 / 71%);
+    border-radius:20px;
+    
+    
+}
+
+.buying h2{
+    color:#a3a3a3;
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 9px;
+    align-self: center;
+    margin:0;
+    padding:0;
+}
+
+.buying h1{
+    color:white;
+    font-size: 2.1rem;
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 4px;
+    align-self: center;
+    margin:0;
+    padding:0;
+}
+
+.buying p{
+    color:rgb(159 159 159);
+    font-size: 1.5rem;
+    font-weight:550;
+    font-family: 'Roboto Slab', serif;
+    padding: 0;
+    margin: 0;
+}
+
+.adv{
+    height:auto;
+    width:32vw;
+    position: absolute;
+    top:65px;
+    right:10px;
+    border-radius: 20px;
+}
+
+.preload{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index:100;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;*/
+}
+
+.gif{
+    width:auto;
+    max-height:350px;
+}
+
+.bagdec{
+    display: flex;
+    border:5px solid rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+    gap:20px;
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+    max-width:40vw;
+    height:10vh; /*32vh*/
+    width:35vw;
+    /*background-color: rgb(0, 0, 0);*/
+    background-color: rgb(0 0 0 / 71%);
+    padding:15px;
+    border-radius:30px;
+    color:white;
+    /*margin-top:50px;*/
+    position: absolute;
+    top:393px;
+    right:50px;
+    
+}
+
+.bagdec img{
+    height: auto;
+    width:14vw;
+    border-radius: 25px;
+    border:5px solid white;
+    box-shadow: 9px 8px 20px 0px black;
+}
+
+.options{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    margin-left:10px;
+    gap:100px;
+
+}
+
+.homepg{
+    background-color: #ff7c00;
+    border-radius: 6px;
+    padding:5px;
+    color: white;
+    text-decoration: none;
+    align-self: center;
+    font-size: 1.2rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.instruct{
+    position: absolute;
+    top:90vh;
+    right:217px;
+    font-size:2rem;
+    color:white;
+    border:none;
+    background-color: #ff003b;
+    border-radius: 20px;
+    padding:12px;
+    font-family: 'Acme', sans-serif;
+    
+
+}
+
+.btns{
+    display: flex;
+    justify-content: center;
+    gap:12px;
+}
+
+
+.proceed{
+    background-color: #2fb12f;
+    border-radius: 6px;
+    padding:5px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    
+    font-size: 1.2rem
+}
+
+.browse{
+    background-color: #ff1100;
+    border-radius: 6px;
+    padding:5px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    align-self: center;
+    font-size: 1.2rem
+}
+
+.add{
+    color: white;
+    
+    background-color: rgb(55, 121, 241);
+    border-radius: 6px;
+    outline: none;
+    border:none;
+    padding:5px;
+    font-size: 1.2rem;
+
+}
+
+.cnt{
+    color: white;
+    background-color: rgb(255, 153, 0);
+    border-radius: 6px;
+    outline: none;
+    border:none;
+    padding:5px;
+    font-size: 1.2rem;
+}
+
+.matinfoeng{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:110px;
+    gap:46px;
+    /*border:5px solid black;*/
+    padding: 10px;;
+    
+}
+
+.matpic{
+    height:auto;
+    width:30vw;
+    
+}
+
+.matpic2{
+    height:auto;
+    width:22.5vw;
+}
+
+.infoeng{
+    text-align: center;
+    width:30vw;/*575px*/
+    font-size: 1.2rem;
+    line-height: 34px;
+    background-color: rgb(0 0 0 / 71%);
+    padding:10px;
+    border-radius:45px;
+    color:wheat;
+
+}
+
+.matinfosin p a{
+    text-decoration: none;
+    color:#e92000;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    margin-top:30px;
+    padding-bottom:50px;
+    
+    gap:15px;
+    
+}
+
+.galrytpc{
+    text-align: center;
+    margin-top:15px;
+    font-size: 1.5rem;
+}
+
+.give1{
+    height:23vh;
+    width:23vw;
+}
+
+.give2{
+    height:23vh;
+    width:20vw;
+}
+
+.give3{
+    height:23vh;
+    width:18vw;
+}
+
+.give4{
+    height:23vh;
+    width:7vw;
+}
+
+.matinfosin{
+    /*position: absolute;
+    top:313px;
+    right:100px;*/
+    padding:11px;
+    border:5px solid black;
+    width:80vw;
+    text-align: left;
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin-top:1000px;
+    background-color: #f9a53d;
+}
+
+.matinfosin p{
+    padding:0;
+    margin:0;
+    margin-bottom:15px;
+    
+}
+
+.fb{
+    color: wheat;
+    background-color: rgb(55, 121, 241);
+    padding:9px;
+    text-decoration: none;
+    border-radius: 12px;
+    
+    
+    
+}
+
+}
+

@@ -37,9 +37,9 @@
             </ul>
 
             <div class="butns">
-            <a href="books.html">
+            <a href="purchases.html">
                 <button id="backbtn">
-                    << Back
+                    << Back(Reset Form)
             </button></a>
 
             <a href="#">
@@ -59,22 +59,68 @@
     </div>
 
     <div class="formparent">
-        <form class="form" action="mail.php" method="post">
-            <input type="text" placeholder="First Name" name="fname" id="name1" class="space" required>
-            <input type="text" placeholder="Second Name" name="secname" id="name2" class="space" required>
-            <input type="text" placeholder="Your Addres Line 1" name="adresline1" id="adres1" class="space" required>
-            <input type="text" placeholder="Your Addres Line 2" name="adresline2" id="adres2" class="space" required>
-            <input type="text" placeholder="Your Addres Line 3" name="adresline3" id="adres3" class="space" required>
-            <input type="text" placeholder="Contact Number" name="contact" id="contact" class="space" required>
-            <input type="email" placeholder="E Mail (Optional)" name="email" id="email" class="space" required>
+        <div class="mailbox">
+            <img src="IMG/mailbox.svg" class="mailbx">
+        </div>
+        <form class="form" action="https://sheetdb.io/api/v1/11mjed6vdng6v" method="POST" id="sheetdb-form">
+            <input type="text" placeholder="First Name" name="data[First Name]" id="name1" class="space" required>
+            <input type="text" placeholder="Second Name" name="data[Second Name]" id="name2" class="space" required>
+            <input type="text" placeholder="Your Addres Line 1" name="data[Address 1]" id="adres1" class="space" required>
+            <input type="text" placeholder="Your Addres Line 2" name="data[Address 2]" id="adres2" class="space" required>
+            <input type="text" placeholder="Your City" name="data[Address 3]" id="adres3" class="space" required>
+            <input type="text" placeholder="Contact Number" name="data[Contact Number]" id="contact" class="space" required>
+            <input type="email" placeholder="E Mail (Optional)" name="data[Email]" id="email" class="space">
             <div class="txtexplain">Your Orders:</div>
-            <textarea name="orders" id="textarea" class="spacetext"></textarea>
-            <textarea name="tmsrp" id="tprice" class="totalprice"></textarea>
+            <textarea name="data[Orders]" id="textarea" class="spacetext" style="resize:none" readonly></textarea>
+            <p>(without Courrier charges)</p>
+            <textarea name="data[Total Price]" id="tprice" class="totalprice" readonly>(without Courrier charges)<br></textarea>
             <button type="submit" class="subbtn" id="sumit">SUBMIT</button>
             
         </form>
 
     </div>
+
+
+    
+
+    <div class="popup" id="popup">
+        <h2>ORDER PLACED!!</h2>
+        <p>Thank You for your Purchase, We're Currently preparing your order and will be delivered to your Doorstep soon!!</p>
+        <img src="./IMG/tick.gif" alt="" class="tick">
+        <a href="index.html"><button class="returnh">OK</button></a>
+    </div>
+
+
+
+    
+
+    <script>
+        //examine the below code from sheet db learn it
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            //alert('success')
+            txtarea.textContent="";
+            sessionStorage.clear()
+            pop.style.opacity="1";
+            pop.style.top="-637px";
+            bk2oderf="";
+            bk3oderf="";
+            bk4oderf="";
+            bk5oderf="";
+            bk6oderf="";
+
+          });
+        });
+    </script>
+    
 
     
         
